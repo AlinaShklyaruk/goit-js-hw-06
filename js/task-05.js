@@ -7,6 +7,7 @@ function onInputChange(event) {
     const inputValue = event.currentTarget.value;
     if (inputValue !== '') {
         outputEl.textContent = inputValue;
-    } 
-    return emptyInput;
+    } else {
+        outputEl.textContent = "Anonymous";
+    }
 }
