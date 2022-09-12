@@ -1,8 +1,8 @@
-const inputEl = document.querySelector("validation-input");
-const min
+const inputEl = document.querySelector("#validation-input");
+const minLength = inputEl.getAttribute("data-length");
 
-inputEl.addEventListener('focus', onInput);
+inputEl.addEventListener('blur', onInput);
 function onInput(event) {
     const inputValue = event.currentTarget.value;
-    if (inputValue.length ===)
+    inputValue.length === minLength ? inputEl.classList.add("valid") : inputEl.classList.add("invalid");
 }
