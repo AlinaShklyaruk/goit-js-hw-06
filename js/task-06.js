@@ -6,3 +6,5 @@ function onInput(event) {
     const inputValue = event.currentTarget.value;
     inputValue.length === minLength ? inputEl.classList.add("valid") : inputEl.classList.add("invalid");
 }
+console.log(minLength);
+console.log(inputValue.length);
