@@ -4,7 +4,7 @@ const minLength = parseInt(inputEl.getAttribute("data-length"));
 inputEl.addEventListener('blur', onInput);
 
 function onInput(event) {
-    const inputValue = event.currentTarget.value;
+    const inputValue = event.currentTarget.value.trim();
     if (inputValue.length === minLength) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
